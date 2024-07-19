@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanzi's Radio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+            color: rgb(255, 255, 255);
+            background-color: black;
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://imgcdn.agendadigitale.eu/wp-content/uploads/2021/09/09144420/musica-3.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.5;
+            z-index: -1;
+        }
+        img.cc_streaminfo {
+            width: 200px; /* Puoi regolare questa dimensione come preferisci */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tanzi's Radio</h1>
+    <br /><img class="cc_streaminfo" data-type="trackimageurl" data-username="2024_07_15_audio_1" /><br /> 
+    
+    <audio controls>
+        <source src="http://chandra.shoutca.st:8036/stream" autoplay="autoplay" type="audio/mpeg">
+        Il tuo browser non supporta l'elemento audio.
+    </audio>
+    
+    <br>
+    
+    <strong>Current song:</strong> <a class="cc_streaminfo" data-type="song" data-username="2024_07_15_audio_1">Loading ...</a><br />
+    <strong>Current playlist:</strong> <a class="cc_streaminfo" data-type="trackplaylist" data-username="2024_07_15_audio_1">Loading ...</a><br />
+
+    <script language="javascript" type="text/javascript" src="https://chandra.shoutca.st/system/streaminfo.js"></script>
+    <script language="javascript" type="text/javascript" src="https://chandra.shoutca.st:2199/system/streaminfo.js"></script>
+    
+</body>
+</html>
